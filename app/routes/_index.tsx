@@ -5,7 +5,15 @@ import { ServiceCard } from "~/components/service";
 export const meta: MetaFunction = () => {
   return [
     { title: "Layi Lawal & Co" },
-    { name: "description", content: "Layi Lawal & Co Chartered Accountants." },
+    { name: "title", content: "Layi Lawal & Co Chartered Accountants" },
+    {
+      name: "description",
+      content:
+        "Trusted financial experts with over 30 years of experience in accountancy, insolvency, tax, advisory, and audit. We provide tailored solutions to help businesses and individuals achieve financial stability and growth. Contact us today.Layi Lawal & Co Chartered Accountants.",
+    },
+    { name: "url", content: "https://layi-lawal-frontend.vercel.app" },
+    { name: "type", content: "website" },
+    // { name: "logo", content: "/images/logo-light-500.png" },
   ];
 };
 
@@ -26,50 +34,56 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section
-        id="services"
-        className="text-center"
-      >
+      <section id="services" className="text-center">
         <h2 className="text-2xl text-center m-4">Services</h2>
         <div className=" md:flex md:flex-row md:flex-wrap justify-evenly max-w-[80%] m-auto my-12">
-        <div className="row-start-1 col-start-1 md:basis-1/2 lg:basis-1/3">
-          <ServiceCard
-            name="Audit"
-            summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
-          />
-        </div>
-        <div className="row-start-1 col-start-3 md:basis-1/2 lg:basis-1/3">
-          <ServiceCard
-            name="Advisory"
-            summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
-          />
-        </div>
-        <div className="row-start-2 col-start-1 md:basis-1/2 lg:basis-1/3">
-          <ServiceCard
-            name="Accontancy"
-            summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
-          />
-        </div>
-        <div className="row-start-2 col-start-3 md:basis-1/2 lg:basis-1/3">
-          <ServiceCard
-            name="Tax"
-            summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
-          />
-        </div>
-        <div className="row-start-3 col-start-2 md:basis-1/2 lg:basis-1/3">
-          <ServiceCard
-            name="Insolvency"
-            summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
-          />
+          <div className="row-start-1 col-start-1 md:basis-1/2 lg:basis-1/3">
+            <ServiceCard
+              name="Audit"
+              summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
+            />
           </div>
+          <div className="row-start-1 col-start-3 md:basis-1/2 lg:basis-1/3">
+            <ServiceCard
+              name="Advisory"
+              summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
+            />
           </div>
+          <div className="row-start-2 col-start-1 md:basis-1/2 lg:basis-1/3">
+            <ServiceCard
+              name="Accontancy"
+              summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
+            />
+          </div>
+          <div className="row-start-2 col-start-3 md:basis-1/2 lg:basis-1/3">
+            <ServiceCard
+              name="Tax"
+              summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
+            />
+          </div>
+          <div className="row-start-3 col-start-2 md:basis-1/2 lg:basis-1/3">
+            <ServiceCard
+              name="Insolvency"
+              summary="The most commonly used units are vh and vw. However, there are other viewport-relative units such as dvh, dvw, svh, svw, lvh, and lvw. These units are used to define the size of an element relative to the dynamic viewport, small viewport, large viewport, and initial containing block."
+            />
+          </div>
+        </div>
       </section>
-      <section id="about" className="text-center bg-[url('/images/about.jpg')] bg-cover bg-center min-w-full text-light">
+      <section
+        id="about"
+        className="text-center bg-[url('/images/about.jpg')] bg-cover bg-center min-w-full text-light"
+      >
         {/* <h2>About Us</h2> */}
         <div className="bg-dark bg-opacity-40 h-full py-2 md:py-8 md:flex md:flex-row md:justify-evenly px-4">
           <div id="company-badge" className="w-4/5 mx-auto my-4 md:basis-2/5">
-            <img src="/images/logo-dark-500.png" alt="Company Logo" className="w-4/5 lg:w-2/5 m-auto" />
-            <p className="text-2xl  m-4">Layi Lawal & Co Chartered Accountants</p>
+            <img
+              src="/images/logo-dark-500.png"
+              alt="Company Logo"
+              className="w-4/5 lg:w-2/5 m-auto"
+            />
+            <p className="text-2xl  m-4">
+              Layi Lawal & Co Chartered Accountants
+            </p>
           </div>
           <div id="company-bio" className="w-4/5 lg:w-3/5 m-auto md:basis-2/5 ">
             <p className="my-4 md:text-left text-lg font-sans">{`Something about your years of experience which includes a variety of services in a wide range of industries. This may also include the goals or mission of the firm, and maybe how it accomplishes them. Client-centric of course. Maybe take advantage of the logo and say something like 'illuminating the path for your clients'.`}</p>
